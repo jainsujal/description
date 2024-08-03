@@ -3,9 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sujal Tandure - Video Editing Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        main {
+            padding: 2rem;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .video-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .video-card {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .video-card h2 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .video-card a {
+            display: inline-block;
+            margin-top: 0.5rem;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .video-card a:hover {
+            color: #388E3C;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #388E3C;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .video-card {
+            opacity: 0;
+            animation: fadeInUp 0.5s ease forwards;
+        }
+    </style>
 </head>
 <body>
-    aaaaaa
+    <header>
+        <h1>Sujal Tandure</h1>
+        <p>Video Editing Portfolio</p>
+    </header>
+    <main>
+        <section class="video-section">
+            <div class="video-card" style="animation-delay: 0s;">
+                <h2>Video Editing Showreel</h2>
+                <a href="https://drive.google.com/file/d/1-PLSEjq4eT0nqDLzUEAvvbPzTNBxHKMH/view?usp=drivesdk" target="_blank">Watch Video</a>
+            </div>
+            <div class="video-card" style="animation-delay: 0.2s;">
+                <h2>Sports Commercial Advertisement</h2>
+                <a href="https://drive.google.com/file/d/1-RafBek9bPJUHS14XVAh5MAXnh3GxEiu/view?usp=drivesdk" target="_blank">Watch Video</a>
+            </div>
+            <div class="video-card" style="animation-delay: 0.4s;">
+                <h2>Podcast Editing</h2>
+                <a href="https://drive.google.com/file/d/1-WL3RkJL5vAsnLk7yQsJKpF1TFk-3k13/view?usp=drivesdk" target="_blank">Watch Video</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact: <a href="mailto:sujaltandure7@gmail.com">sujaltandure7@gmail.com</a></p>
+    </footer>
 </body>
 </html>
